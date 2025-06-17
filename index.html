@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hivanshu Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <img class="close_icon" src="images/close-icon.png" onclick="closemenu()">
+        </ul>
+        <img class="menu_icon" src="images/menu-icon.jpg" onclick="openmenu()">
+      </nav>
+      <div class="header-text">
+        <p>ML Enthusiast</p>
+        <h1>Hi, I'm <span>Hivanshu</span><br> Tyagi From India.</h1>
+      </div>
+    </div>
+  </div>
+<!-- -----------------------about section------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/AboutPhoto.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am a graduate student pursuing a Master’s in Computer Science at the University of Illinois, with a strong focus on machine learning, web development, and data-driven problem-solving. My technical expertise spans Python, R, and Java, along with a deep understanding of data visualization, statistical modeling, and scalable AI architectures. I have hands-on experience in developing intelligent systems that integrate advanced algorithms with intuitive, user-centric web interfaces. Passionate about bridging the gap between analytics and real-world application, I thrive in collaborative environments and am constantly seeking opportunities to innovate and expand my technical horizons.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Languages</span><br>Java, C++, Python, R, SQL, React, HTML/CSS, Javascript</li>
+              <li><span>Relevant Courses</span><br>Deep Learning, Machine Learning, DBMS, Data Mining, Data visualization(R), Data Structures, Algorithms</li>
+              <li><span>Tools</span><br>Git, Docker, Word, Excel, IntelliJ, Visual Studio Code, Jupyter Notebook</li>
+              <li><span>Soft skills</span><br>Teamwork, Problem-solving, Time management, Communication</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2024-current</span><br>Master's in CS at University of Illinois, Springfield, USA</li>
+              <li><span>Dec 2020 - May 2024</span><br>B.Tech in CSE at Punjab Engineering College, Chandigarh, INDIA</li>
+              <li><span>2019-2020</span><br>High School at L.B.S Sr. Sec. School, Rajasthan</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ---------- Experience ------------------------ -->
+  <div id="experience">
+    <h1 class="experience-title">Experience</h1>
+    <div class="experience-title-heading">
+      <p class="intern-title"><span>Research Intern,</span><br> Indian Institute of Science Education and Research, Mohali</p>
+      <ul>
+        <li>Developed an application for disease detection in bone marrow tissue image.</li>
+        <li>Utilized Qupath and ImageJ to analyze patterns in over 50 images and leveraged Python with key libraries like NumPy and scikit-image for cellularity assessment.</li>
+        <li>Alongside, annotated over 150 images and used this data to train our ML model that is integrated into the software for identifying regions of interest (ROI).</li>
+        <li>The application significantly reduce time taken by 75% and errors by 15% while enhancing overall eﬃciency.</li>
+      </ul>
+    </div>
+    <div class="experience-title-heading">
+      <p class="intern-title"><span>Cyber Internship,</span><br> Chandigarh Police with Infosys </p>
+      <ul>
+        <li>Mapped and categorized 30+ cyber fraud patterns, creating useful information that helped update policies, ultimately leading to a decrease in fraud incidents by 20% over six months.</li>
+        <li>Performed surveys using Google Forms and in-person meetings with over 400 participants, including cyber-victims, to collect detailed data.</li>
+        <li>Gained in-depth theoretical knowledge in cybersecurity through a series of lectures conducted by Infosys, covering key concepts and best practices in the field.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ----------------Projects----------------------- -->
+  <div id="projects">
+    <h1 class="project-title">Projects</h1>
+    <div class="single-project-container">
+      <img src="images/Ghumantu-Profile.jpeg">
+      <div class="right-side-single-container">
+        <div class="right-side-title">
+          <h3>GHUMANTU</h3>
+          <a href="https://github.com/hivanshu4961/Ghumantu-Backend" target="_blank"><img src="images/github-icon.webp"></a>
+        </div>
+        <p>A CRUD web application based on microservice architecture for online ticket booking for over 150 cultural and heritage sites in India.</p>
+        <div class="hidden-data">
+          <ul>
+            <li>Managed the security part using concepts of Auth Service, JWT token, reverse proxy by API gateway, etc.</li>
+            <li>Enhanced user engagement and improved overall user experience across the platform.</li>
+          </ul>
+      </div>
+        <div class="project-tech-stack">
+          <p>React</p>
+          <p>Springboot</p>
+          <p>Tailwind CSS</p>
+          <p>PostgreSql</p>
+        </div>
+      </div>
+    </div>
+    <div class="single-project-container">
+      <img src="images/ToxicClassifier-Profile.png">
+      <div class="right-side-single-container">
+        <div class="right-side-title">
+          <h3>Toxic Comment Classifier</h3>
+          <a href="https://github.com/hivanshu4961/Toxic-comment-classifier" target="_blank"><img src="images/github-icon.webp"></a>
+        </div>
+        <p>An application that detects toxic and vulgar comments in a document that can be used for further processing.</p>
+        <div class="hidden-data">
+          <ul>
+            <li>To build a model thats capable of detecting diﬀerent types of toxicity. like threats, obscenity, insults, and identity-based hate, achieving an accuracy of over 85%..</li>
+            <li>Used a machine learning algorithm to identify toxic comments and flag them for removal.</li>
+          </ul>
+        </div>
+        <div class="project-tech-stack">
+          <p>Python</p>
+          <p>Machine learning</p>
+          <p>Deep Learning</p>
+          <p>Visualization</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-project-container">
+      <img src="images/food-Recommendation.jpeg">
+      <div class="right-side-single-container">
+        <div class="right-side-title">
+          <h3>Meal Recommendation System</h3>
+        </div>
+        <p>A smart food recommendation system based on the macronutrients provided by the user like carbs, proteins and fats</p>
+        <div class="hidden-data">
+          <ul>
+            <li>Applied K-means algorithm to group the dataset based on similarity score.(Protein dominated, carbs dominated and neutral) </li>
+            <li>Implemented some rule based techniques and constraints to find combinations and select the best one based on input variables.</li>
+            <li>Maintained score variable to find deviation from target, applied DBScan and Hierarchial clustering to find best model.</li>
+          </ul>
+        </div>
+        <div class="project-tech-stack">
+          <p>Python</p>
+          <p>Machine learning</p>
+          <p>Statistics and rule based</p>
+          <p>Data Visualization</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------Contact-------------------- -->
+  <div id="contact">
+    <div class="contact-conatiner">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="email">
+          <img class="social-media" src="images/email-logo.png">
+          <div>hivanshutyagi4961@gmail.com</div>
+        </div>
+        
+        <div class="social-icon">
+          <a href="https://www.facebook.com/hivanshu4961" target="_blank"><img class="social-media" src="images/facebook_logo.jpg"></img></a>
+          <a href="https://www.instagram.com/hivanshu_4961/" target="_blank"><img class="social-media" src="images/Instagram-logo.png"></a>
+          <a href="https://www.linkedin.com/in/hivanshu-tyagi-08a8b522b/" target="_blank"><img class="social-media" src="images/linkedin-logo.png"></a>
+          <a href="https://github.com/hivanshu4961" target="_blank"><img class="social-media" src="images/github-icon.webp"></a>
+        </div>
+        <a href="images/HivanshuML.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby7gileV3Op3iFXwqH5Rem70DdzHf71TFSopSeP4OTnfm3q3buyJeLSb24xcZoXde0u/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html> 

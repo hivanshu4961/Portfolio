@@ -17,7 +17,7 @@ body{
   background-image: url(images/cover-Photo.png);
   background-size: cover;
   background-position: center;
-   background-attachment: fixed;
+  background-attachment: fixed;
 }
 .container{
   padding: 10px;
@@ -447,6 +447,7 @@ nav .menu_icon, .close_icon{
 @media only screen and (max-width: 600px) {
   #header{
     background-image: url(images/phone-logo.png);
+    background-attachment: scroll;
   }
   nav{
   padding: 0;
